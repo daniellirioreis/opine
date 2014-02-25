@@ -1,0 +1,13 @@
+source 'https://rubygems.org'
+gem 'rails', '4.0.0'
+gem 'pg'
+gem 'devise'
+gem 'puma'
+gem 'responders', :git => 'https://github.com/plataformatec/responders.git'
+gem 'simple_form'
+gem 'cocoon', '~> 1.2.0 '
+gem 'foreigner'
+gem 'enumerate_it', '1.2.0'
+gem 'will_paginate', '~> 3.0'
+gem 'rails3-jquery-autocomplete'
+

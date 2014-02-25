@@ -1,0 +1,13 @@
+pt-BR:
+  activerecord:
+    models:
+      poll:
+        one: "Votação"
+        other: "Votações"
+
+    attributes:
+      poll:
+        status_poll: 'Status'
+        proposal_id: "Proposta"
+        proposal: "Proposta"
+        user_id: "Vereador"

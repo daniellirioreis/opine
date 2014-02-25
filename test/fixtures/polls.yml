@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  proposal_id: 
+  status_poll: 1
+
+two:
+  proposal_id: 
+  status_poll: 1

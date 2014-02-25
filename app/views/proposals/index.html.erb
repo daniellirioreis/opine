@@ -1,0 +1,26 @@
+<h3 align="center">Listagem de  propostas(Lei e Projetos)</h3>
+
+    <% if @proposals.any? %>
+      <% @proposals.each do |proposal| %>
+        <hr/>
+        <h3 align='center'><%= proposal%></h3>
+        <p>
+        <%= proposal.description%>
+        </p>
+        <p>
+          <%= proposal.user%>
+        </p>
+        <div class="btn-group">
+          <%= link_to "Editar", edit_proposal_path(proposal), :class => "btn btn-primary", :title => "Editar #{proposal}" %>
+          <%= link_to 'Deletar', proposal, method: :delete, data: { confirm: 'Confirma exclusão?'}, :class => "btn btn-danger" %>
+        </div>
+      <% end %>
+    <% else %>
+        <p>Nenhum registro foi encontrado.</p>
+    <% end %>
+    <hr/>
+    <%= will_paginate @proposals %>
+<br/>
+<p>
+  <%= link_to 'Nova Proposta', new_proposal_path, :class => "btn" %>
+</p>

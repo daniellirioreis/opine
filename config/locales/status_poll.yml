@@ -1,0 +1,5 @@
+pt-BR:
+  enumerations:
+    status_poll:
+      open: 'Aberta'
+      closed: 'Fechada'

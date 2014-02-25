@@ -1,0 +1,22 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: opine_development
+  pool: 5
+  username: daniellirio
+  password: 120188
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: opine_test
+  pool: 5
+  username: daniellirio
+  password: 120188
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: opine_production
+  pool: 5
+  username: daniellirio
+  password: 120188

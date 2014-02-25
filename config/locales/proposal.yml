@@ -1,0 +1,13 @@
+pt-BR:
+  activerecord:
+    models:
+      proposal:
+        one: "Proposta"
+        other: "Proposta"
+
+    attributes:
+      proposal:
+        name: 'Nome'
+        description: "Descrição"
+        type_proposal: "Tipo de proposta"
+        user_id: "Vereador"

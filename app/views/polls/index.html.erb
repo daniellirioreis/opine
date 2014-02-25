@@ -1,0 +1,33 @@
+<h3 align='center'>Opine - Propostas(Lei e Projetos)</h3>
+    <% if @polls.any? %>
+      <% @polls.each do |poll| %>
+        <hr/>
+        <h3 align='center'><%= poll%></h3>
+        <p>
+        <%= poll.description%>
+        </p>
+        <p>
+          <%= poll.user%>
+        </p>
+        <table>
+          <tr>
+            <td align='center'>
+              <%= link_to like_poll_path(poll), role: 'button' do %>
+                <i class="icon-thumbs-up" title= "Gostaram"></i>
+                  <%= poll.amount_of_approvals%>
+              <% end %>
+              <%= link_to unlike_poll_path(poll), role: 'button' do %>
+                <i class="icon-thumbs-down" ></i>
+                <%= poll.amount_of_not_approvals%>
+              <% end %>
+            </td>
+          </tr>
+        </table>
+      <% end %>
+    <% else %>
+        <p>Nenhum registro foi encontrado.</p>
+    <% end %>
+    <hr/>
+    <%= will_paginate @polls %>
+
+<br/>

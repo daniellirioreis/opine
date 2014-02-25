@@ -1,0 +1,30 @@
+<div class="sidebar-nav">
+    <ul class="nav nav-tabs nav-stacked">
+      <li class="nav-header"></li>
+      <li>
+        <%= link_to polls_path role: 'button' do %>
+          <i class="icon-home"></i>
+            Home
+        <% end %>
+      </li>
+      <li>
+        <%= link_to users_path, role: 'button' do %>
+          <i class="icon-user"></i>
+            Usuarios
+        <% end %>
+      </li>
+      <li>
+        <%= link_to proposals_path, role: 'button' do %>
+          <i class="icon-align-justify"></i>
+            Propostas
+        <% end %>
+      </li>
+      <li>
+        <%= link_to new_poll_path, role: 'button' do %>
+          <i class="icon-ok-sign"></i>
+            Criar Votação
+        <% end %>
+      </li>
+    </ul>
+</div>
+

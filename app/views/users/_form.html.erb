@@ -1,0 +1,14 @@
+
+<%= simple_form_for(@user) do |f| %>
+  <div class="form-inputs">
+    <%= f.input :name, :required => true, :autofocus => true, :input_html => { :maxlength => 200 } %>
+    <%= f.input :email, :required => true, :autofocus => true %>
+
+    <%= f.input :password, :autocomplete => "off", :hint => "deixe em branco se você não quiser mudá-lo", :required => false %>
+    <%= f.input :password_confirmation, :required => false %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, class: "btn btn-success" %>
+  </div>
+<% end %>

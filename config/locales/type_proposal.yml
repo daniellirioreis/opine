@@ -1,0 +1,5 @@
+pt-BR:
+  enumerations:
+    type_proposal:
+      law: 'Lei'
+      project: 'Projeto'
